@@ -39,10 +39,10 @@
                         <a class="nav-link" href="contato.html">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="login.html" data-bs-toggle="modal" data-bs-target="#login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a>
+                        <a class="btn btn-outline-primary ms-md-2" href="inscricao.html" >Inscreva-se</a>
                     </li>
                 </ul>
             </div>
@@ -274,12 +274,44 @@
                     </ul>
                 </div>
             </div>
+            
+   
         </div>
 
         <div class="bg-primary text-center py-3">
             <p class="mb-0">Comercial Store © 2024. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Faça Seu Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="loginEmail">E-mail:</label>
+                            <input type="email" class="form-control" id="loginEmail" name="loginEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginSenha">Senha:</label>
+                            <input type="password" class="form-control" id="loginSenha" name="loginSenha">
+                        </div>
+
+                        <button type="submit" class="d-block btn btn-primary mt-3">Entrar na Conta</button>
+                        <small class="d-block form-text text-muted d-block">Esqueceu sua senha? <a href="">Clique aqui</a></small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
