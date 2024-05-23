@@ -99,9 +99,43 @@
                         <label for="cepInscricao">Cep:</label>
                         <input class="form-control" type="number" name="cepInscricao" id="cepInscricao" placeholder="xxxxx-xxx">
                     </div>
-
-
                 </form>
+
+                <div class="bg-light rounded box-shadow p-3">
+                    <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
+                    <nav class="nav btn-group col-6" id="formaPagamento" role="tablist">
+                        <button type="button" class="btn btn-secondary btn-sm" id="navCartaoTab" data-bs-toggle="tab" aria-selected="true" >
+                            Cartão de Crédito
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="navBoletoTab" data-bs-toggle="tab" aria-selected="true">
+                            Boleto Bancário
+                        </button>
+                    </nav>
+
+                    <div class="row my-4">
+                        <div class="mb-3 col-md-6">
+                            <label for="nomeCartao">Nome no cartão:</label>
+                            <input type="text" class="form-control" name="nomeCartao" id="nomeCartao" placeholder="Nome Impresso No Cartão">
+                        </div>
+                        <div class="mb-3 col-lg-3">
+                            <label for="mesExpiracao">Mês</label>
+                            <input type="text" class="form-control" name="mesExpiracao" id="mesExpiracao" placeholder="Expira Mês">
+                        </div>
+                        <div class="mb-3 col-lg-3">
+                            <label for="anoExpiracao">Ano</label>
+                            <input type="text" class="form-control" name="anoExpiracao" id="anoExpiracao" placeholder="Expira Ano">
+                        </div>
+
+                        <div class="mb-3 col-md-6">
+                            <label for="numeroCartao">Número do Cartão</label>
+                            <input type="number" class="form-control" name="numeroCartao" id="numeroCartao" placeholder="5555 5555 5555 5555">
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="numeroCartao">Código de Segurança</label>
+                            <input type="number" class="form-control" name="numeroCartao" id="numeroCartao" placeholder="XXX">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md">
 
