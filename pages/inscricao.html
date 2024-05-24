@@ -34,7 +34,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="planos.html">Planos</a>
                 </li>
-             
+
                 <li class="nav-item">
                     <a class="nav-link" href="login.html" data-bs-toggle="modal" data-bs-target="#login">Login</a>
                 </li>
@@ -51,7 +51,7 @@
 <section class="container">
     <div class="my-5">
         <div class="text-center">
-        <h1>PÁGINA EM PRODUÇÃO</h1>
+            <h1>PÁGINA EM PRODUÇÃO</h1>
             <h2 class="display-4 text-primary">
                 Inscreva-se
             </h2>
@@ -103,48 +103,89 @@
 
                 <div class="bg-light rounded box-shadow p-3">
                     <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
-                    <nav class="nav btn-group col-6" id="formaPagamento" role="tablist">
-                        <button type="button" class="btn btn-secondary btn-sm" id="navCartaoTab" data-bs-toggle="tab" aria-selected="true" >
+                    <nav class="nav btn-group col-12" id="formaPagamento" role="tablist">
+                        <button type="button" class="btn btn-secondary btn-sm active" id="navCartaoTab" data-bs-toggle="tab" href="#navCartao" aria-selected="true" role="tab" aria-controls="navCartao">
                             Cartão de Crédito
                         </button>
-                        <button type="button" class="btn btn-secondary btn-sm" id="navBoletoTab" data-bs-toggle="tab" aria-selected="true">
+                        <button type="button" class="btn btn-secondary btn-sm" id="navBoletoTab" data-bs-toggle="tab" href="#navBoleto" role="tab" aria-controls="navBoleto">
                             Boleto Bancário
                         </button>
                     </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="navCartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
+                            <form class="row my-3">
+                                <div class="mb-3 col-lg-6">
+                                    <label for="nomeCartao">Nome no cartão:</label>
+                                    <input type="text" class="form-control" name="nomeCartao" id="nomeCartao" placeholder="Nome Impresso No Cartão">
+                                </div>
+                                <div class="mb-3 col-lg-3 col-sm-6">
+                                    <label for="mesExpiracao">Mês</label>
+                                    <input type="text" class="form-control" name="mesExpiracao" id="mesExpiracao" placeholder="Expira Mês">
+                                </div>
+                                <div class="mb-3 col-lg-3 col-sm-6">
+                                    <label for="anoExpiracao">Ano</label>
+                                    <input type="number" class="form-control" name="anoExpiracao" id="anoExpiracao" placeholder="Expira Ano">
+                                </div>
 
-                    <div class="row my-4">
-                        <div class="mb-3 col-md-6">
-                            <label for="nomeCartao">Nome no cartão:</label>
-                            <input type="text" class="form-control" name="nomeCartao" id="nomeCartao" placeholder="Nome Impresso No Cartão">
+                                <div class="mb-3 col-lg-6 col-sm-6">
+                                    <label for="numeroCartao">Número do Cartão</label>
+                                    <input type="number" class="form-control" name="numeroCartao" id="numeroCartao" placeholder="5555 5555 5555 5555">
+                                </div>
+                                <div class="mb-3 col-lg-6 col-sm-6">
+                                    <label for="numeroCartao">Código de Segurança</label>
+                                    <input type="number" class="form-control" name="numeroCartao" id="numeroCartao" placeholder="XXX">
+                                </div>
+                            </form>
                         </div>
-                        <div class="mb-3 col-lg-3">
-                            <label for="mesExpiracao">Mês</label>
-                            <input type="text" class="form-control" name="mesExpiracao" id="mesExpiracao" placeholder="Expira Mês">
+                        <!--Boleto-->
+                        <div class="row my-3 tab-pane fade" id="navBoleto" role="tabpanel" aria-labelledby="nav-boleto-tab">
+                            <h2 class="h6 text-secondary">Clique em contratar plano que enviaremos um boleto para seu e-mail.</h2>
                         </div>
-                        <div class="mb-3 col-lg-3">
-                            <label for="anoExpiracao">Ano</label>
-                            <input type="text" class="form-control" name="anoExpiracao" id="anoExpiracao" placeholder="Expira Ano">
-                        </div>
+                    </div>
+                </div>
 
-                        <div class="mb-3 col-md-6">
-                            <label for="numeroCartao">Número do Cartão</label>
-                            <input type="number" class="form-control" name="numeroCartao" id="numeroCartao" placeholder="5555 5555 5555 5555">
+                <div class="form-check mt-4">
+                    <input type="checkbox" class="form-check-input" value="" name="checkboxTermos" id="checkboxTermos">
+                    <label for="checkboxTermos" class="form-check-label">Concordo com os <a href="#">Termos e Condições</a></label>
+                </div>
+                <div class="mt-2">
+                    <button type="submit" class="btn btn-primary btn-lg" name="contratarPlano" id="contratarPlano">
+                        Contratar Plano
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-4 mx-auto order-first order-md-1 mb-5">
+                <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
+                <div class="bg-light rounded p-4 box-shadow">
+                    <h2>Gold</h2>
+                    <ul class="list-unstyled lista-plano">
+                        <li>→ 30 dias de viagem</li>
+                        <li>→ 3 destinos diferentes</li>
+                        <li>→ Tudo pago pela empresa</li>
+                        <li>→ Ingressos para festas</li>
+                    </ul>
+                    <form action="">
+                        <div class="mb-3">
+                            <select class="form-control bg-light" name="input-cidade" id="input-cidade">
+                                <option value="">- Selecione a Cidade -</option>
+                                <option value="">California</option>
+                                <option value="">Dublin</option>
+                                <option value="">París</option>
+                            </select>
                         </div>
-                        <div class="mb-3 col-md-6">
-                            <label for="numeroCartao">Código de Segurança</label>
-                            <input type="number" class="form-control" name="numeroCartao" id="numeroCartao" placeholder="XXX">
+                    </form>
+
+                    <div class="row mt-4 align-items-center">
+                        <div class="col-lg text-center">
+                            <span class="h4">R$5.000</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md">
-
-            </div>
         </div>
-
     </div>
 </section>
-
 
 <!-- footer -->
 
