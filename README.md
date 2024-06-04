@@ -20,7 +20,7 @@ Bootstrap é um framework gratuito e de código aberto voltado para o desenvolvi
 Minha Jornada com o Bootstrap
 
 
-### Trabalhar com Bootstrap tem sido uma experiência enriquecedora. Através deste repositório, adquiri conhecimentos valiosos e práticos na criação de sites responsivos e fáceis de usar. Os projetos aqui incluídos destacam os seguintes resultados de aprendizado:
+## Trabalhar com Bootstrap tem sido uma experiência enriquecedora. Através deste repositório, adquiri conhecimentos valiosos e práticos na criação de sites responsivos e fáceis de usar. Os projetos aqui incluídos destacam os seguintes resultados de aprendizado:
 
 * **Design Responsivo:** Entender como implementar e customizar o sistema de grid do Bootstrap para diferentes tamanhos de tela.
 
@@ -43,8 +43,5 @@ Este repositório representa meu compromisso em dominar o Bootstrap e criar apli
 
 ## **Boas Codificações!**
 
-                                                  **Autor:** Bruno Barbosa Moreira
 
-                                                  **Contato:** bruno.devmoreira@gmail.com
-
-                                                  **GitHub:** github.com/bmoreira1 
+ **Contato: bruno.devmoreira@gmail.com**
