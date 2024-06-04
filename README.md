@@ -40,5 +40,6 @@ Este repositório representa meu compromisso em dominar o Bootstrap e criar apli
 **Boas Codificações!**
 
 Autor: Bruno Barbosa Moreira
+
 Contato: bruno.devmoreira@gmail.com
 GitHub: github.com/bmoreira1 
